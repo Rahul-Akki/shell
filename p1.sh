@@ -1,12 +1,13 @@
 #!/bin/bash
 
-NUMBER1=$1
-NUMBER2=$2
+USERNAME=$1
+PASSWORD=$2
 
-SUM=$($NUMBER1+$NUMBER2)
+echo "Enter Username: USERNAME"
+read USERNAME
+echo "Enter Password: PASSWORD"
+read -s PASSWORD
 
-echo "Total:: $SUM"
+echo "User Name is $USERNAME, Password is $PASSWORD"
 
-echo "How maney args passed : $#"
-echo "All args passed : $@"
-echo "Script name : $0"
+
