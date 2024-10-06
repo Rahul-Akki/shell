@@ -1,10 +1,23 @@
 #!/bin/bash
 
-CRICKET=("Bat" "Ball" "Wicket")
+ID=$(id -u)
 
+if [ $ID -ne 0 ]
+then
+    echo " ERROR: Please run the script with Root Access "
+    exit 1
+else
+    echo "You are the root user"
+fi
 
-echo "${CRICKET[0]}"
-echo "${CRICKET[1]}"
-echo "${CRICKET[2]}"
-echo "${CRICKET[3]}"
-echo "${CRICKET[@]}"
+yum install mysql -y
+
+if [ $? -eq 0 ]
+then
+    echo "MySQL installation completed successfully"
+else
+    echo "MySQL installation failed"
+    exit 1
+fi
+
+systemctl start mysqld
