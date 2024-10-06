@@ -1,10 +1,10 @@
 #!/bin/bash
 
-N1=$1
-N2=$2
-
-SUM=$(($N1+$N2))
-
-echo "Total:: $SUM"
+CRICKET=("Bat" "Ball" "Wicket")
 
 
+echo "${CRICKET[0]}"
+echo "${CRICKET[1]}"
+echo "${CRICKET[2]}"
+echo "${CRICKET[3]}"
+echo "${CRICKET[@]}"
