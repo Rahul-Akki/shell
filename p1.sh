@@ -1,11 +1,10 @@
 #!/bin/bash
 
-echo "Please enter user name: "
-read USERNAME
+N1=$1
+N2=$2
 
-echo "User name is $USERNAME"
-
-echo "Please enter Passwors: "
-read -s PASSWORD
-
-echo "Password is $PASSWORD" 
+SUM=($N1+$N2)
+echo "Total = $SUM" 
+echo "No. of args passed" $#"
+echo "all args passed $@"
+echo "$0"
