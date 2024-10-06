@@ -1,10 +1,12 @@
 #!/bin/bash
 
-N1=$1
-N2=$2
+NUMBER1=$1
+NUMBER2=$2
 
-SUM=$($N1+$N2)
-echo "Total = $SUM" 
-echo "No. of args passed" $#"
-echo "all args passed $@"
-echo "$0"
+SUM=$($NUMBER1+$NUMBER2)
+
+echo "Total:: $SUM"
+
+echo "How maney args passed : $#"
+echo "All args passed : $@"
+echo "Script name : $0"
