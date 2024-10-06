@@ -1,13 +1,10 @@
 #!/bin/bash
 
-USERNAME=$1
-PASSWORD=$2
+N1=$1
+N2=$2
 
-echo "Enter Username: USERNAME"
-read USERNAME
-echo "Enter Password: PASSWORD"
-read -s PASSWORD
+SUM=$(($N1+$N2))
 
-echo "User Name is $USERNAME, Password is $PASSWORD"
+echo "Total:: $SUM"
 
 
