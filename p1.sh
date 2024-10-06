@@ -1,7 +1,11 @@
 #!/bin/bash
 
-P1=Ramesh
-P2=Suresh
+echo "Please enter user name: "
+read USERNAME
 
-echo "$P1: Hello $P2 Good Morning"
-echo "$P2: Hello $P1 How are you doing"
+echo "User name is $USERNAME"
+
+echo "Please enter Passwors"
+read -u PASSWORD
+
+echo "Password is $PASSWORD" 
